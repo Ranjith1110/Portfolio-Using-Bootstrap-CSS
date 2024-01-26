@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat&family=Noto+Sans+JP:wght@200&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    font-family: 'Lato', sans-serif;
+}
+
+.offset::before {
+    display: block;
+    content: '';
+    height: 6rem;
+}
+
+/* Navbar start */
+
+.navbar {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    background: rgba(0, 0, 0, 0.6) !important;
+    padding: 20px 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    padding-left: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #03a774;
+}
+
+.heading-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.heading-content h5 {
+    font-size: 3em;
+    font-weight: 300;
+    color: #fff;
+    font-family: monospace;
+}
+
+.heading-content h1 {
+    font-size: 5em;
+    font-weight: bolder;
+    color: #000;
+    letter-spacing: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading-content p {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #fff;
+    letter-spacing: 4px;
+    word-spacing: 5px;
+}
+
+/* Navbar end */
+
+/* About start */
+
+#about .btn {
+    border: 2px solid #ccc;
+    width: 40%;
+    padding: 15px 22px;
+    background: #000;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#about .btn a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#about .btn:hover {
+    border: 2px solid #1ebba3;
+    cursor: pointer;
+}
+
+/* About end */
+
+/* Service start */
+
+#service .button {
+    border: 2px solid #ccc;
+    width: 40%;
+    padding: 15px 22px;
+    background: #000;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#service .button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#service .button:hover {
+    border: 2px solid #1ebba3;
+    cursor: pointer;
+}
+
+/* Newsletter start */
+
+#newsletter input {
+    height: 2.555rem;
+    padding: 0 1em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;
+}
+
+#newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f8fafb;
+}
+
+#newsletter h2 {
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 50px;
+}
+
+#newsletter p {
+    font-family: 'poppins', sans-serif;
+    font-weight: 300;
+}
+
+/* Newsletter end */
+
+/* Footer start */
+
+#dec p a {
+    text-decoration: none;
+}
+
+#dec-1 p a {
+    text-decoration: none;
+}
+
+#dec-2 a {
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+}
+
+/* Footer end */
+
+/* Media query start */
+@media screen and (max-width:960px){
+    .heading-content h5 {
+        font-size: 3em;
+        font-weight: 300;
+        color: #fff;
+        font-family: monospace;
+        position: absolute;
+        top: -80px;
+        left: 36%;
+    }
+    .heading-content h1 {
+        font-size: 5em;
+        font-weight: 300;
+        color: #000;
+        position: absolute;
+        top: -38px;
+        left: 33%;
+        letter-spacing: 2px;
+    }
+    .heading-content p {
+        font-size: 0.9em;
+        position: absolute;
+        top: 58px;
+        left: 35%;
+        color: #fff;
+    }
+    #man{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    /* Tablets */
+    .navbar {
+        letter-spacing: 0.1rem;
+        padding: 10px 0;
+    }
+    .heading-content h5 {
+        font-size: 3em;
+        position: absolute;
+        top: -250px;
+        left: 34px;
+    }
+    
+    .heading-content h1 {
+        font-size: 3em;
+        position: absolute;
+        top: -200px;
+        left: 30px;
+        letter-spacing: 2px;
+    }
+    
+    .heading-content p {
+        font-size: 0.9em;
+        position: absolute;
+        top: -140px;
+        left: 33px;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+    #wan{
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width:479px) {
+    .navbar {
+        letter-spacing: 0.1rem;
+        padding: 10px 0;
+    }
+    .heading-content h5 {
+        font-size: 1em;
+        position: absolute;
+        top: -230px;
+        left: 50px;
+        
+    }
+    
+    .heading-content h1 {
+        font-size: 1.7em;
+        letter-spacing: normal;
+        position: absolute;
+        top: -210px;
+        left: 44px;
+    }
+    
+    .heading-content p {
+        font-size: 0.7em;
+        position: absolute;
+        top: -176px;
+        left: 33px;
+        color: #fff;
+        letter-spacing: normal;
+    }
+    #wan{
+       position: relative;
+       top: 40px;
+        
+    }
+    #wan-1{
+        margin-top: 20px;
+    }
+    #wan-2{
+        color: #03a774;
+    }
+}
